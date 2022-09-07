@@ -1,7 +1,7 @@
 def laskuri(h1, h1hal, h2, h2hal):
     import math
-    h1arvo = h1hal/2 ** 2 * math.pi / 10000 / h1
-    h2arvo = h2hal/2 ** 2 * math.pi / 10000 / h2
+    h1arvo = h1hal/2 ** 2 * math.pi / 10000 / h1 # neliömetri on 10,000 kertaa neliösentti
+    h2arvo = h2hal/2 ** 2 * math.pi / 10000 / h2 # neliömetri on 10,000 kertaa neliösentti
     if h1arvo > h2arvo:
         print(f"Pizza #1 on parempi vaihtoehto, siitä saa {h1arvo} neliömetriä per euro")
         print(f"Pizza #2 on huonompi vaihtoehto, siitä sai vain {h2arvo} neliömetriä per euro")
