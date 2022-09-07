@@ -1,6 +1,6 @@
 def gallons(nestegallonat):
-        litrat = nestegallonat / 4.54609
-        return print(f"Gallonit {nestegallonat} litroissa on {litrat}")
+        litrat = nestegallonat * 3.78541
+        return print(f"{nestegallonat} nestegallonaa on {litrat} litraa")
 
 gallon = 0
 while gallon >= 0:
