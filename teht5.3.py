@@ -1,17 +1,8 @@
-Kokonaisluku = int(input("Anna kokonaisluku: "))
-Lista = []
-n = 2
-found = 0
-while found == 0:
-    if Kokonaisluku % n == 0 and n != Kokonaisluku:
-        found = 1
-        print(f"Luku {Kokonaisluku} ei ole alkuluku")
-        nm = Kokonaisluku % n
-    elif n == 10:
-        print(f"Luku {Kokonaisluku} on alkuluku")
-        nm = Kokonaisluku % n
+i = int(input("Anna kokonaisluku: "))
+
+for n in range(2, i):
+    if i % n == 0:
+        print("Ei ole alkuluku: ")
         break
-    else:
-        n += 1
-        nm = Kokonaisluku % n
-print(f"Toimenpide on ohi")
+else:
+    print("On alkuluku: ")
